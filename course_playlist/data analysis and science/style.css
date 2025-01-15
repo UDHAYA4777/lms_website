@@ -1,0 +1,70 @@
+@media (max-width: 800px) {
+    .content-container {
+        flex-direction: column-reverse; /* Moves course content below the video */
+    }
+
+    .course-content {
+        width: 100%; /* Adjusts to full width */
+    }
+
+    .video-section {
+        width: 100%; /* Adjusts to full width */
+    }
+}
+
+header button {
+    background-color: #2d3748;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+
+
+@media (max-width: 800px) {
+    .flex-col {
+        height: auto !important;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    iframe {
+        height: calc(40vh);
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        height: 40px;
+    }
+
+    header button {
+        padding: 0.4rem 0.8rem;
+    }
+
+    .sidebar {
+        flex: 1 1 100%;
+        margin-bottom: 1rem;
+    }
+
+    .main-content {
+        flex: 1 1 100%;
+    }
+
+    iframe {
+        height: calc(30vh);
+    }
+}
