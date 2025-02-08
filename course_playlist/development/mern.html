@@ -41,79 +41,37 @@
         }
     </script>
 </head>
-<body class="bg-gray-100 font-roboto">
-    <div class="bg-gray-300 text-white p-4 flex justify-between items-center">
-        <div class="flex items-center">
-            <img alt="Peri logo" class="h-10" src="asset/PERI_Logo.jfif"/>
-            <span class="ml-4 text-black">MERN Full Stack</span>
-        </div>
-        <div class="flex items-center sm:hidden" id="menu-icon">
-            <button id="menu-toggle" class="bg-gray-800 px-3 py-2 rounded text-white">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-        <!-- Navigation links -->
-        <div id="menu-content" class="hidden flex-col absolute bg-gray-300 w-full left-0 top-16 p-4 rounded-md shadow-md">
-            <a href="../../index.html" target="_blank" class="block text-center mb-2">
-                <button class="bg-gray-800 px-4 py-2 rounded text-white w-full">Home</button>
-            </a>
-            <a href="https://indrajith-chatbot.netlify.app/" target="_blank" class="block text-center mb-2">
-                <button class="bg-gray-800 px-6 py-3 rounded text-white w-full flex items-center justify-center">
-                    <i class="fa-solid fa-robot"></i>
-                </button>
-            </a>
-            <a href="../../E-book.html" target="_blank" class="block text-center mb-2">
-                <button class="bg-gray-800 px-4 py-2 rounded text-white w-full">Book</button>
-            </a>
+<body>
+    <div class="bg-white">
+        <div class="flex items-center justify-between mx-auto max-w-6xl h-16">
+            <!-- Logo Section - Align to Left -->
+            <div class="flex items-center space-x-4 mr-auto">
+                <h1 class="text-3xl font-bold text-red-600">
+                    PERI <span class="text-3xl text-black">Learn</span>
+                </h1>
+                <span class="text-3xl text-black">|</span>
+                <span class="text-3xl text-black">MERN Full Stack</span>
+            </div>
+
+            <!-- Navigation Section - Align to Right -->
+            <div class="flex items-center gap-16">
+                 <ul class="flex font-medium items-center gap-8 text-lg">
+                    <a href="../../index.html"
+                     class="relative  bg-gray-800 text-white font-medium text-sm py-3 px-6 rounded-lg overflow-hidden cursor-pointer">
+                        Home
+                      </a>
+                      <a href="https://indrajith-openai.netlify.app/" target="_blank" class="relative inline-block bg-gray-800 text-white font-medium text-sm py-3 px-6 rounded-lg overflow-hidden cursor-pointer">
+                        ChatBot
+                      </a>
+                      <a href="../../E-book.html" target="_blank" class="relative inline-block bg-gray-800 text-white font-medium text-sm py-3 px-6 rounded-lg overflow-hidden cursor-pointer">
+                        Book
+                      </a>
+                      
+                </ul>
+            </div>
         </div>
     </div>
-    
-    <style>
-        /* General flex styles */
-        .flex {
-            display: flex;
-            gap: 0;
-        }
-    
-        /* Dropdown menu styles */
-        #menu-content {
-            display: none; /* Initially hidden */
-            flex-direction: column;
-            z-index: 1000; /* Ensure it appears above other elements */
-        }
-    
-        #menu-content a {
-            margin: 0;
-        }
-    
-        /* Responsive adjustments */
-        @media (max-width: 550px) {
-            #menu-icon {
-                display: flex; /* Show menu icon on smaller screens */
-            }
-        }
-    
-        @media (min-width: 551px) {
-            #menu-icon {
-                display: none; /* Hide menu icon for larger screens */
-            }
-    
-            #menu-content {
-                display: flex !important; /* Ensure menu is always visible on larger screens */
-                flex-direction: row;
-                position: static;
-                background-color: transparent;
-                box-shadow: none;
-                width: auto;
-                top: auto;
-                left: auto;
-            }
-    
-            #menu-content a {
-                margin: 0 5px;
-            }
-        }
-    </style>
+</body>
     
         <script>
             const toggleButton = document.getElementById("menu-toggle");
@@ -175,51 +133,6 @@
 
     </div>
     
-   
-
-
-
- 
-
-
-<style>
-
-
-
-
-
-        /* Default iframe styling */
-        .responsive-iframe {
-            width: 100%; /* Full width */
-            height: 300px; /* Default height */
-        }
-    
-        /* Adjust height for screens wider than 800px */
-        @media (min-width: 801px) {
-            .responsive-iframe {
-                height: 750px !important; /* Height for large screens */
-            }
-        }
-        @media (min-width: 801px) {
-            .responsive-iframe {
-                height: 780px !important; /* Height for large screens */
-            }
-        }
-    
-        /* Adjust height for screens between 551px and 800px */
-        @media (max-width: 800px) and (min-width: 551px) {
-            .responsive-iframe {
-                height: 350px !important; /* Medium screens */
-            }
-        }
-    
-        /* Adjust height for screens smaller than 550px */
-        @media (max-width: 550px) {
-            .responsive-iframe {
-                height: 300px !important; /* Smaller screens */
-            }
-        }
-    </style>
     </div>
 
 
@@ -266,46 +179,90 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-wrap justify-between">
-                <!-- About Section -->
-                <div class="w-full md:w-1/3 mb-4">
-                    <h2 class="text-xl font-semibold mb-2">About</h2>
-                    <p>Learn through online courses, study <br> resources, and interactive tools to enhance <br> and knowledge anytime, anywhere.</p>
+        <!-- Footer -->
+        <footer>
+            <section class="border-t border-t-gray-200 py-8 bg-white">
+              <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                  <!-- Footer Text -->
+                  <div class="mb-4 md:mb-0">
+                    <h2 class="text-xl font-bold">
+                      <span class="text-red-600 text-3xl">PERI </span>
+                      <span class="text-black text-3xl">Learn</span>
+                    </h2>
+                    <h3>
+                      Enhance your learning journey with interactive courses and valuable resources.
+                    </h3>
+                  </div>
+        
+                  <!-- Social Links -->
+                  <div
+                    class="flex space-x-4 mt-4 md:mt-0 justify-center md:justify-start"
+                  >
+                    <!-- GitHub Icon -->
+                    <a
+                      href="https://github.com/UDHAYA4777"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="social-link"
+                    >
+                      <i class="fab fa-github text-3xl"></i>
+                    </a>
+        
+                    <!-- LinkedIn Icon -->
+                    <a
+                      href="https://www.linkedin.com/in/indrajith-m-5540a3200/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="social-link"
+                    >
+                      <i class="fab fa-linkedin text-3xl"></i>
+                      <!-- Corrected LinkedIn icon -->
+                    </a>
+        
+                    <!-- Discord Icon -->
+                    <a
+                      href="https://discord.com/channels/1331532270720389160/1331532271445872711"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="social-link"
+                    >
+                      <i class="fab fa-discord text-3xl"></i>
+                    </a>
+        
+                    <!-- Email Icon -->
+                    <a
+                      href="mailto:mindrajith29@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="social-link"
+                    >
+                      <i class="fa-solid fa-envelope text-3xl"></i>
+                    </a>
+                  </div>
                 </div>
-                <!-- Resources Section -->
-                <div class="w-full md:w-1/3 mb-4">
-                    <h2 class="text-xl font-semibold mb-2">Resources</h2>
-                    <ul>
-                        <li><a href="../../index.html" class="hover:text-blue-500" >Home</a></li>
-                        <li><a href="https://medium.com/@mindrajith29/connecting-students-with-opportunities-a-game-changing-job-portal-developed-for-our-college-a44672f5f07b" class="hover:text-blue-500" target="_blank">Blog</a></li>
-                        <li><a href="mailto:mindrajith29@gmail.com" class="text-white-400 hover:text-blue-500" class="hover:underline" >Contact</a></li>
-                        
-                    </ul>
-                </div>
-                <!-- Follow Us Section -->
-                <div class="w-full md:w-1/3 mb-4">
-                    <h2 class="text-xl font-semibold mb-2">Follow Us</h2>
-                    <div class="flex space-x-4">
-                        <a href="https://github.com/UDHAYA4777" class="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="mailto:mindrajith29@gmail.com" class="text-gray-400 hover:text-white">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/indrajith-m-5540a3200/" class="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="text-center text-gray-400 mt-4">
-                 Indrajith M || E-Learning-Platform
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+              </div>
+            </section>
+        
+            <!-- TailwindCSS Styling -->
+            <style>
+              .social-link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                background-color: #e1e1e1;
+                color: black;
+                border-radius: 50%;
+                transition: background-color 0.3s, transform 0.3s;
+                margin: 0 10px;
+              }
+        
+              .social-link:hover {
+                background-color: #5865f2;
+                transform: scale(1.1);
+              }
+            </style>
+          </footer>
+        </html>  

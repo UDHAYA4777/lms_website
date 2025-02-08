@@ -1,962 +1,871 @@
+<!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   E-Learning Platform
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="style.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
- </head>
- <body class="font-roboto bg-gray-100">
-  <!-- Navbar -->
-  <nav class="bg-white shadow-md">
-   <!-- Main Header -->
-   <div class="container mx-auto px-4 py-2 flex justify-between items-center">
-     <!-- Logo -->
-     <a class="flex items-center text-2xl font-bold text-gray-800" href="#" style="line-height: 1;">
-       <img
-         alt="Logo of E-Learn platform, a stylized open book"
-         class="logo"
-         src="assets/images.jfif"
-         style="height: 50px; width: auto; margin-right: 10px;"
-       />
-       E-Learning
-     </a>
- 
-     <!-- Hamburger Button -->
-     <button id="menu-toggle" class="text-gray-700 focus:outline-none lg:hidden">
-       <i class="fas fa-bars"></i>
-     </button>
- 
-     <!-- Navigation Links -->
-     <ul
-       id="menu"
-       class="hidden lg:flex flex-col lg:flex-row lg:space-x-4 bg-white lg:bg-transparent absolute lg:static top-14 left-0 w-full lg:w-auto px-4 lg:px-0"
-     >
-       <li class="menu-link">
-         <a
-           class="text-gray-700 hover:text-blue-600 block py-2"
-           target="_blank"
-           href="https://medium.com/@mindrajith29/connecting-students-with-opportunities-a-game-changing-job-portal-developed-for-our-college-a44672f5f07b"
-         >
-           Blog
-         </a>
-       </li>
-       <li class="menu-link">
-         <a class="text-gray-700 hover:text-blue-600 block py-2" href="#Courses">
-           Courses
-         </a>
-       </li>
-       <li class="menu-link">
-         <a class="text-gray-700 hover:text-blue-600 block py-2" href="mailto:mindrajith29@gmail.com">
-           Contact
-         </a>
-       </li>
-       <li class="menu-link">
-         <a
-           class="text-gray-700 hover:text-blue-600 block py-2"
-           target="_blank"
-           href="https://indrajith-chatbot.netlify.app/"
-         >
-           ChatBot
-         </a>
-       </li>
-     </ul>
-   </div>
- </nav>
- 
- <script>
-   // Toggle menu visibility on mobile screens
-   document.getElementById("menu-toggle").addEventListener("click", function () {
-     const menu = document.getElementById("menu");
-     menu.classList.toggle("hidden");
-   });
- </script>
- 
- <style>
-   /* Hide specific links between 550px and 1000px */
-   @media (min-width: 550px) and (max-width: 1000px) {
-     .menu-link {
-       display: none;
-     }
-   }
- 
-   /* Default menu visibility for larger screens */
-   @media (min-width: 1000px) {
-     #menu {
-       display: flex !important;
-     }
-     #menu-toggle {
-       display: none; /* Hide hamburger menu */
-     }
-   }
- 
-   /* Mobile menu visibility for screens below 550px */
-   @media (max-width: 550px) {
-     #menu-toggle {
-       display: block; /* Show hamburger menu */
-     }
-     #menu {
-       position: absolute;
-       top: 60px;
-       left: 0;
-       width: 100%;
-       background-color: white;
-       z-index: 1000;
-       border-top: 1px solid #ddd;
-     }
-     #menu li {
-       text-align: center;
-       padding: 10px 0;
-     }
-   }
- </style>
- 
- 
- 
- 
- 
- 
- 
-  <!-- Hero Section -->
-  <section class="bg-white py-12">
-    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
-       <div class="md:w-1/2">
-          <h1 class="text-4xl font-bold text-gray-800 mb-4">
-             Discover the Best E-Books Online
-          </h1>
-          <p class="text-gray-600 mb-6">
-             Join our community and start exploring a wide range of e-books today. We offer a vast collection to help you expand your knowledge and skills.
-          </p>
-          <a class="bg-blue-600 text-white px-6 py-3 rounded shadow-md hover:bg-blue-700" target="_blank" href="E-book.html">
-             Get Started
-          </a>
-       </div>
-       <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
-          <img 
-             alt="A diverse group of people reading e-books on various devices" 
-             class="rounded shadow-md transform scale-105 translate-x-4" 
-             src="assets/main.webp"
-          />
-       </div>
-    </div>
- </section>
- 
-  <!-- E-Books Section -->
-  <section class="bg-gray-200 py-12">
-   <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center " id="Courses">
-     Popular Courses
-    </h2>
-    <!-- Row 1 -->
-    <div class="mb-8">
-     <h3 class="text-3xl font-bold text-gray-800 mb-4">
-        Aptitude
-     </h3>
-     <br>
-     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- E-Book 1 -->
-      <a href="course_playlist/aptitude/GATE_apt.html" target="_blank" class="block">
-        <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-           <img 
-              alt="E-book cover image showing a person coding on a laptop" 
-              class="w-full h-60 object-cover" 
-              src="course_playlist/aptitude/asset/gate.jpg" 
-           />
-           <div class="p-4">
-              <h4 class="text-xl font-bold text-gray-800 mb-2">
-                General Aptitude for GATE
-              </h4>
-           </div>
-        </div>
-     </a>
-     
-      <!-- E-Book 2 -->
-      <a href="course_playlist/aptitude/tamil_apt.html" target="_blank" class="block">
-        <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-           <img 
-              alt="E-book cover image showing a person coding on a laptop" 
-              class="w-full h-60 object-cover" 
-              src="course_playlist/aptitude/asset/tamil.jpg" 
-           />
-           <div class="p-4">
-              <h4 class="text-xl font-bold text-gray-800 mb-2">
-               Quantitative Aptitude
-              </h4>
-           </div>
-        </div>
-     </a>
-      <!-- E-Book 3 -->
-      <a href="course_playlist/aptitude/Eng_apt.html" target="_blank" class="block">
-        <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-           <img 
-              alt="E-book cover image showing a person coding on a laptop" 
-              class="w-full h-60 object-cover" 
-              src="course_playlist/aptitude/asset/tcs.jpg" 
-           />
-           <div class="p-4">
-              <h4 class="text-xl font-bold text-gray-800 mb-2">
-               Aptitude one shot
-              </h4>
-           </div>
-        </div>
-    </div></div>
-     </a><br>
-    <!-- Row 2 -->
 
-    <div class="mb-8">
-      <h3 class="text-3xl font-bold text-gray-800 mb-4">
-      Google Courses
-     </h3>
-     <br>
-     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- E-Book 1 -->
-      <a href="course_playlist/Google/ALe.html" target="_blank" class="block">
-        <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-           <img 
-              alt="E-book cover image showing a person coding on a laptop" 
-              class="w-full h-60 object-cover" 
-              src="course_playlist/Google/asset/ai.jpg" 
-           />
-           <div class="p-4">
-              <h4 class="text-xl font-bold text-gray-800 mb-2">
-               Google AI Essentials
-              </h4>
-           </div>
-        </div>
-     </a>
-     
-      <!-- E-Book 2 -->
-      <a href="course_playlist/Google/GCS.html" target="_blank" class="block">
-        <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-           <img 
-              alt="E-book cover image showing a person coding on a laptop" 
-              class="w-full h-60 object-cover" 
-              src="course_playlist/Google/asset/cs.jpg" 
-           />
-           <div class="p-4">
-              <h4 class="text-xl font-bold text-gray-800 mb-2">
-               Google Cybersecurity Certificate
-              </h4>
-              <br>
-           </div>
-        </div>
-     </a>
-      <!-- E-Book 3 -->
-      <a href="course_playlist/Google/GPE.html" target="_blank" class="block">
-        <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-           <img 
-              alt="E-book cover image showing a person coding on a laptop" 
-              class="w-full h-60 object-cover" 
-              src="course_playlist/Google/asset/make.jpg" 
-           />
-           <div class="p-4">
-              <h4 class="text-xl font-bold text-gray-800 mb-2">
-               Google Prompting Essentials
-              </h4>
-           </div>
-        </div>
-    </div></div><br>
-     </a>
-    <!-- Row 3 -->
-    <div class="mb-8">
-      <h3 class="text-3xl font-bold text-gray-800 mb-4">
-         programming Languages
-      </h3>
-      <br>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-       <!-- E-Book 1 -->
-       <a href="course_playlist/Programming_language/C._harp.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/Programming_language/asset/csharp.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  C# Full Course
-               </h4>
-            </div>
-         </div>
-      </a>
-      
-       <!-- E-Book 2 -->
-       <a href="course_playlist/Programming_language/C.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/Programming_language/asset/c.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  C Full Course
-               </h4>
-            </div>
-         </div>
-      </a>
-       <!-- E-Book 3 -->
-       <a href="course_playlist/Programming_language/C++.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/Programming_language/asset/c++.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  C++ Full Course
-               </h4>
-            </div>
-         </div>
-      </a>
-       <!-- E-Book 4 -->
-       <a href="course_playlist/Programming_language/Data_Structure_and_Algorithm.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/Programming_language/asset/dsa.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  Data Structures and Algorithms
-               </h4>
-            </div>
-         </div>
-      </a>
-       <!-- E-Book 5 -->
-       <a href="course_playlist/Programming_language/Go.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/Programming_language/asset/go.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  Go Programming
-               </h4>
-            </div>
-         </div>
-      </a>
-       <!-- E-Book 6 -->
-       <a href="course_playlist/Programming_language/html.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/Programming_language/asset/html.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  HTML Tutorial
-               </h4>
-            </div>
-         </div>
-      </a>
-       <!-- E-Book 7 -->
-       <a href="course_playlist/Programming_language/java.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/Programming_language/asset/java.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  Java Full Course
-               </h4>
-            </div>
-         </div>
-      </a>
-       <!-- E-Book 8 -->
-       <a href="course_playlist/Programming_language/javascript.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/Programming_language/asset/js.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  JavaScript Full Course
-               </h4>
-            </div>
-         </div>
-      </a>
-       <!-- E-Book 9 -->
-       <a href="course_playlist/Programming_language/kotlin.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/Programming_language/asset/kot.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  Kotlin Programming
-               </h4>
-            </div>
-         </div>
-      </a>
-       <!-- E-Book 10 -->
-       <a href="course_playlist/Programming_language/php.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/Programming_language/asset/php.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-               PHP Programming
-               </h4>
-            </div>
-         </div>
-      </a>
-       <!-- E-Book 11 -->
-       <a href="course_playlist/Programming_language/Python.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/Programming_language/asset/py.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  Python Full Course
-               </h4>
-            </div>
-         </div>
-      </a>
-       <!-- E-Book 12 -->
-       <a href="course_playlist/Programming_language/r.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/Programming_language/asset/r.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  R Programming
-               </h4>
-            </div>
-         </div>
-      </a>
-       <!-- E-Book 13 -->
-       <a href="course_playlist/Programming_language/swift.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/Programming_language/asset/swift.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  Swift Programming
-               </h4>
-            </div>
-         </div>
-     </div></div>
-      </a><br>
- 
-      <!-- Row 4 -->
-     <div class="mb-8">
-       <h3 class="text-3xl font-bold text-gray-800 mb-4">
-         Data Analysis and science
-      </h3>
-      <br>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-       <!-- E-Book 1 -->
-       <a href="course_playlist/data analysis and science/dataanalysis.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/data analysis and science/asset/ana.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  Data Analyst Bootcamp
-               </h4>
-            </div>
-         </div>
-      </a>
-      
-       <!-- E-Book 2 -->
-       <a href="course_playlist/data analysis and science/Excel_ds.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/data analysis and science/asset/excel.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  Excel Data Analysis Course
-               </h4>
-               <br>
-            </div>
-         </div>
-      </a>
-      <!-- E-Book 3 -->
-      <a href="course_playlist/data analysis and science/IBM.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/data analysis and science/asset/sci.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  IBM Data Science Course
-               </h4>
-               <br>
-            </div>
-         </div>
-      </a>
-       <!-- E-Book 4 -->
-       <a href="course_playlist/data analysis and science/powerBI.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/data analysis and science/asset/bi.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  Power BI Tutorial
-               </h4>
-            </div>
-         </div>
-     </div></div><br>
-      </a>
-   
-   
-    <!-- Row 5 -->
-    <div class="mb-8">
-      <h3 class="text-3xl font-bold text-gray-800 mb-4">
-         Full Stack Development
-      </h3>
-      <br>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-       <!-- E-Book 1 -->
-       <a href="course_playlist/development/BroCode_Front-end.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/development/asset/htmlcss.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  Front-end tutorials
-               </h4>
-            </div>
-         </div>
-      </a>
-      
-       <!-- E-Book 2 -->
-       <a href="course_playlist/development/BroCode_back-end.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/development/asset/back-end-developer.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  Back-end tutorials
-               </h4>
-            </div>
-         </div>
-      </a>
-      <!-- E-Book 3-->
-      <a href="course_playlist/development/Bala_html.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/development/asset/html.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  HTML Tutorial
-               </h4>
-            </div>
-         </div>
-      </a>
-      <!-- E-Book 4 -->
-      <a href="course_playlist/development/bala_css.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/development/asset/css.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  CSS Tutorial
-               </h4>
-            </div>
-         </div>
-      </a>
-      <!-- E-Book 5 -->
-      <a href="course_playlist/development/bala_javascript.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/development/asset/js.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  JavaScript Tutorial
-               </h4>
-            </div>
-         </div>
-      </a>
-      <!-- E-Book 6 -->
-      <a href="course_playlist/development/bala_asy_js.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/development/asset/asjs.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  Asynchronous JavaScript Tutorial
-               </h4>
-            </div>
-         </div>
-      </a>
-      <!-- E-Book 7 -->
-      <a href="course_playlist/development/react.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/development/asset/react.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  React Js Course
-               </h4>
-            </div>
-         </div>
-      </a>
-      <!-- E-Book 8-->
-      <a href="course_playlist/development/redux.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/development/asset/redox.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  Redux Toolkit Tutorial
-               </h4>
-            </div>
-         </div>
-      </a>
-      <!-- E-Book 9 -->
-      <a href="course_playlist/development/express.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/development/asset/express.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  Express Js Tutorial
-               </h4>
-            </div>
-         </div>
-      </a>
-      <!-- E-Book 10 -->
-      <a href="course_playlist/development/NodeJs.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/development/asset/node.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  Node Js Tutorial
-               </h4>
-            </div>
-         </div>
-      </a>
-      <!-- E-Book 11 -->
-      <a href="course_playlist/development/mongodb.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/development/asset/mongodb.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  MongoDB Tutorial
-               </h4>
-            </div>
-         </div>
-      </a>
-      <!-- E-Book 12 -->
-      <a href="course_playlist/development/mongoose.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/development/asset/mongoose.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  Mongoose Tutorial
-               </h4>
-            </div>
-         </div>
-      </a>
+<head>
+   <meta charset="utf-8" />
+   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+   <title>E-Learning Platform</title>
 
-       <!-- E-Book 13 -->
-       <a href="course_playlist/development/mern.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/development/asset/mern.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  MERN Full Stack
-               </h4>
-            </div>
+   <!-- Tailwind CSS -->
+   <script src="https://cdn.tailwindcss.com"></script>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="style.css">
+
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+
+
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+   <div class="bg-white">
+      <div class="flex items-center justify-between mx-auto max-w-6xl h-16">
+         <!-- Logo Section -->
+         <div>
+            <h1 class="text-2xl font-bold text-red-600">
+               PERI <span class="text-2xl text-black">E-Learning</span>
+            </h1>
          </div>
-     </div></div>
-      </a><br>
-     <!-- Row 6 -->
-     <div class="mb-8">
-       <h3 class="text-3xl font-bold text-gray-800 mb-4">
-         Cyber Security
-      </h3>
-      <br>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-       <!-- E-Book 1 -->
-       <a href="course_playlist/cybersecurity/CySA.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/cybersecurity/asset/cysa.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  CompTIA CySA+ - Complete Course
-               </h4>
-            </div>
+         <!-- Navigation Section -->
+         <div class="flex items-center gap-16">
+            <ul class="flex font-medium items-center gap-8 text-lg">
+               <li>
+                  <a href="#" class="hover:text-blue-500">Home</a>
+               </li>
+               <li>
+                  <a href="#Courses" class="hover:text-blue-500">Courses</a>
+               </li>
+               <li>
+                  <a href="mailto:mindrajith29@gmail.com" class="hover:text-blue-500">Contact</a>
+               </li>
+               <li><a href="https://indrajith-openai.netlify.app/" target="_blank" rel="noopener noreferrer"
+                     class="hover:text-blue-500">ChatBot</a></li>
+               <li><a href="https://medium.com/@mindrajith29/connecting-students-with-opportunities-a-game-changing-job-portal-developed-for-our-college-a44672f5f07b"
+                     target="_blank" rel="noopener noreferrer" class="hover:text-blue-500"> Blog</a></li>
+            </ul>
          </div>
-      </a>
-      
-       <!-- E-Book 2 -->
-       <a href="course_playlist/cybersecurity/pentest.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/cybersecurity/asset/pen.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  CompTIA PenTest+ Full Course
-               </h4>
-               <br>
-            </div>
-         </div>
-      </a>
-       <!-- E-Book 3 -->
-       <a href="course_playlist/cybersecurity/CiscoCyberSecurity.html" target="_blank" class="block">
-         <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-            <img 
-               alt="E-book cover image showing a person coding on a laptop" 
-               class="w-full h-60 object-cover" 
-               src="course_playlist/cybersecurity/asset/cisco.jpg" 
-            />
-            <div class="p-4">
-               <h4 class="text-xl font-bold text-gray-800 mb-2">
-                  Cisco Cyber Security
-               </h4>
-            </div>
-         </div>
-     </div></div><br>
-      </a>
-   <!-- Row 7 -->
-   <div class="mb-8">
-      <h3 class="text-3xl font-bold text-gray-800 mb-4">
-         Artificial Intelligence And Machine Learning
-     </h3>
-     <br>
-     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- E-Book 1 -->
-      <a href="course_playlist/aiml/ai.html" target="_blank" class="block">
-        <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-           <img 
-              alt="E-book cover image showing a person coding on a laptop" 
-              class="w-full h-60 object-cover" 
-              src="course_playlist/aiml/asset/sim_ai.jpg" 
-           />
-           <div class="p-4">
-              <h4 class="text-xl font-bold text-gray-800 mb-2">
-               AI Course
-              </h4>
-           </div>
-        </div>
-     </a>
-     
-      <!-- E-Book 2 -->
-      <a href="course_playlist/aiml/ai2.html" target="_blank" class="block">
-        <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-           <img 
-              alt="E-book cover image showing a person coding on a laptop" 
-              class="w-full h-60 object-cover" 
-              src="course_playlist/aiml/asset/2.jpg" 
-           />
-           <div class="p-4">
-              <h4 class="text-xl font-bold text-gray-800 mb-2">
-               Generative AI Full Course
-              </h4>
-              <br>
-           </div>
-        </div>
-     </a>
-      <!-- E-Book 3 -->
-      <a href="course_playlist/aiml/aiandml.html" target="_blank" class="block">
-        <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-           <img 
-              alt="E-book cover image showing a person coding on a laptop" 
-              class="w-full h-60 object-cover" 
-              src="course_playlist/aiml/asset/aiml.jpg" 
-           />
-           <div class="p-4">
-              <h4 class="text-xl font-bold text-gray-800 mb-2">
-               AI And ML Full Course
-              </h4>
-           </div>
-        </div>
-    </div></div><br>
-     </a>
-    <!-- Row 6 -->
-    <div class="mb-8">
-      <h3 class="text-3xl font-bold text-gray-800 mb-4">
-         Cloud Computing
-     </h3>
-     <br>
-     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- E-Book 1 -->
-      <a href="course_playlist/cloud computing/cloud.html" target="_blank" class="block">
-        <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-           <img 
-              alt="E-book cover image showing a person coding on a laptop" 
-              class="w-full h-60 object-cover" 
-              src="course_playlist/cloud computing/asset/aws.jpg" 
-           />
-           <div class="p-4">
-              <h4 class="text-xl font-bold text-gray-800 mb-2">
-               AWS Certified Cloud Practitioner Certification Course
-              </h4>
-           </div>
-        </div>
-     </a>
-     
-      <!-- E-Book 2 -->
-      <a href="course_playlist/cloud computing/cloud1.html" target="_blank" class="block">
-        <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-           <img 
-              alt="E-book cover image showing a person coding on a laptop" 
-              class="w-full h-60 object-cover" 
-              src="course_playlist/cloud computing/asset/sim.jpg" 
-           />
-           <div class="p-4">
-              <h4 class="text-xl font-bold text-gray-800 mb-2">
-               Cloud Computing Full Course
-              </h4>
-              <br>
-           </div>
-        </div>
-     </a>
-      <!-- E-Book 3 -->
-      <a href="course_playlist/cloud computing/cloud2.html" target="_blank" class="block">
-        <div class="bg-white rounded shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-80">
-           <img 
-              alt="E-book cover image showing a person coding on a laptop" 
-              class="w-full h-60 object-cover" 
-              src="course_playlist/cloud computing/asset/goo.jpg" 
-           />
-           <div class="p-4">
-              <h4 class="text-xl font-bold text-gray-800 mb-2">
-               Google Cloud Associate Cloud Engineer Course
-              </h4>
-           </div>
-        </div>
-    </div></div><br>
-     </a>
-     </div>
-    </div>
+      </div>
    </div>
-  </section>
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-8">
-   <div class="container mx-auto px-4">
-       <div class="flex flex-wrap justify-between">
-           <!-- About Section -->
-           <div class="w-full md:w-1/3 mb-4">
-               <h2 class="text-xl font-semibold mb-2">About</h2>
-               <p>Learn through online courses, study <br> resources, and interactive tools to enhance <br> and knowledge anytime, anywhere.</p>
-           </div>
-           <!-- Resources Section -->
-           <div class="w-full md:w-1/3 mb-4">
-               <h2 class="text-xl font-semibold mb-2">Resources</h2>
-               <ul>
-                   <li><a href="index.html" class="hover:text-blue-500" >Home</a></li>
-                   <li><a href="https://medium.com/@mindrajith29/connecting-students-with-opportunities-a-game-changing-job-portal-developed-for-our-college-a44672f5f07b" class="hover:text-blue-500" target="_blank">Blog</a></li>
-                   <li><a href="mailto:mindrajith29@gmail.com" class="text-white-400 hover:text-blue-500" class="hover:underline" >Contact</a></li>
-                   
-               </ul>
-           </div>
-           <!-- Follow Us Section -->
-           <div class="w-full md:w-1/3 mb-4">
-               <h2 class="text-xl font-semibold mb-2">Follow Us</h2>
-               <div class="flex space-x-4">
-                   <a href="https://github.com/UDHAYA4777" class="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer">
-                       <i class="fa-brands fa-github"></i>
-                   </a>
-                   <a href="mailto:mindrajith29@gmail.com" class="text-gray-400 hover:text-white">
-                       <i class="fa fa-envelope" aria-hidden="true"></i>
-                   </a>
-                   <a href="https://www.linkedin.com/in/indrajith-m-5540a3200/" class="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer">
-                       <i class="fab fa-linkedin"></i>
-                   </a>
-               </div>
-           </div>
-           
-       </div>
-       <div class="text-center text-gray-400 mt-4">
-            Indrajith M || E-Learning-Platform
-       </div>
-   </div>
-</footer>
 </body>
-</html>
+<!-- Hero Section -->
+<section class="bg-white py-12">
+   <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2">
+         <h1 class="text-4xl font-bold text-gray-800 mb-4">
+            Discover the Best E-Books Online
+         </h1>
+         <p class="text-gray-600 mb-6">
+            Join our community and start exploring a wide range of e-books today. We offer a vast collection to help you
+            expand your knowledge and skills.
+         </p>
+         <a href="E-book.html" target="_blank" rel="noopener noreferrer">
+            <button
+               class="btn w-36 h-14 rounded-full bg-gradient-to-br from-[#feb692] to-[#ea5455] shadow-lg shadow-[rgba(238,103,97,0.5)] focus:outline-none cursor-pointer border-none text-xl text-white font-sans transition-transform duration-300 ease-in-out hover:translate-y-1 hover:shadow-none active:opacity-50">
+               Get Started
+            </button>
+         </a>
+      </div>
+      <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+         <img alt="A diverse group of people reading e-books on various devices"
+            class="rounded shadow-md transform scale-105 translate-x-4" src="assets/main.webp" />
+      </div>
+   </div>
+</section>
+
+<!-- Section -->
+<section class="bg-white py-12">
+   <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center" id="Courses">
+         Popular Courses
+      </h2>
+
+      <!-- Row 1 -->
+      <div class="mb-8">
+         <h3 class="text-3xl font-bold text-gray-800 mb-4">
+            Aptitude
+         </h3>
+         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- section 1 -->
+            <a href="course_playlist/aptitude/GATE_apt.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-xl overflow-hidden transition-transform duration-300 group-hover:scale-105 group-hover:shadow-2xl h-80">
+                  <img alt=" General Aptitude for GATE" class="w-full h-60 object-cover"
+                     src="course_playlist/aptitude/asset/gate.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        General Aptitude for GATE
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 2 -->
+            <a href="course_playlist/aptitude/tamil_apt.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-xl overflow-hidden transition-transform duration-300 group-hover:scale-105 group-hover:shadow-2xl h-80">
+                  <img alt="Quantitative Aptitude" class="w-full h-60 object-cover"
+                     src="course_playlist/aptitude/asset/tamil.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Quantitative Aptitude
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 3 -->
+            <a href="course_playlist/aptitude/Eng_apt.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-xl overflow-hidden transition-transform duration-300 group-hover:scale-105 group-hover:shadow-2xl h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/aptitude/asset/tcs.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Aptitude One Shot
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+         </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="mb-8">
+         <h3 class="text-3xl font-bold text-gray-800 mb-4">
+            Google Courses
+         </h3>
+         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- E-Book 1 -->
+            <a href="course_playlist/Google/ALe.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-xl overflow-hidden transition-transform duration-300 group-hover:scale-105 group-hover:shadow-2xl h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/Google/asset/ai.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Google AI Essentials
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 2 -->
+            <a href="course_playlist/Google/GCS.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-xl overflow-hidden transition-transform duration-300 group-hover:scale-105 group-hover:shadow-2xl h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/Google/asset/cs.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Google Cybersecurity Certificate
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 3 -->
+            <a href="course_playlist/Google/GPE.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-xl overflow-hidden transition-transform duration-300 group-hover:scale-105 group-hover:shadow-2xl h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/Google/asset/make.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Google Prompting Essentials
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+         </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="mb-8">
+         <h3 class="text-3xl font-bold text-gray-800 mb-4">
+            Programming Languages
+         </h3>
+         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- E-Book 1 -->
+            <a href="course_playlist/Programming_language/C._harp.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/Programming_language/asset/csharp.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        C# Full Course
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 2 -->
+            <a href="course_playlist/Programming_language/C.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/Programming_language/asset/c.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        C Full Course
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 3 -->
+            <a href="course_playlist/Programming_language/C++.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/Programming_language/asset/c++.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        C++ Full Course
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 4 -->
+            <a href="course_playlist/Programming_language/Data_Structure_and_Algorithm.html" target="_blank"
+               class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/Programming_language/asset/dsa.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Data Structures and Algorithms
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 5 -->
+            <a href="course_playlist/Programming_language/Go.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/Programming_language/asset/go.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Go Programming
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 6 -->
+            <a href="course_playlist/Programming_language/html.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/Programming_language/asset/html.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        HTML Tutorial
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 7 -->
+            <a href="course_playlist/Programming_language/java.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/Programming_language/asset/java.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Java Full Course
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 8 -->
+            <a href="course_playlist/Programming_language/javascript.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/Programming_language/asset/js.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        JavaScript Full Course
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 9 -->
+            <a href="course_playlist/Programming_language/kotlin.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/Programming_language/asset/kot.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Kotlin Programming
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 10 -->
+            <a href="course_playlist/Programming_language/php.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/Programming_language/asset/php.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        PHP Programming
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 11 -->
+            <a href="course_playlist/Programming_language/Python.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/Programming_language/asset/py.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Python Full Course
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 12 -->
+            <a href="course_playlist/Programming_language/r.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/Programming_language/asset/r.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        R Programming
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 13 -->
+            <a href="course_playlist/Programming_language/swift.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/Programming_language/asset/swift.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Swift Programming
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+         </div>
+      </div>
+
+
+      <!-- Row 4 -->
+      <div class="mb-8">
+         <h3 class="text-3xl font-bold text-gray-800 mb-4">
+            Data Analysis and Science
+         </h3>
+         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- E-Book 1 -->
+            <a href="course_playlist/data analysis and science/dataanalysis.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/data analysis and science/asset/ana.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Data Analyst Bootcamp
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 2 -->
+            <a href="course_playlist/data analysis and science/Excel_ds.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/data analysis and science/asset/excel.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Excel Data Analysis Course
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 3 -->
+            <a href="course_playlist/data analysis and science/IBM.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/data analysis and science/asset/sci.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        IBM Data Science Course
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 4 -->
+            <a href="course_playlist/data analysis and science/powerBI.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/data analysis and science/asset/bi.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Power BI Tutorial
+                     </h4>
+                  </div>
+               </div>
+            </a>
+         </div>
+      </div>
+
+      <!-- Row 5 -->
+      <div class="mb-8">
+         <h3 class="text-3xl font-bold text-gray-800 mb-4">
+            Full Stack Development
+         </h3>
+         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- E-Book 1 -->
+            <a href="course_playlist/development/BroCode_Front-end.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/development/asset/htmlcss.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Front-end tutorials
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 2 -->
+            <a href="course_playlist/development/BroCode_back-end.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/development/asset/back-end-developer.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Back-end tutorials
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 3 -->
+            <a href="course_playlist/development/Bala_html.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/development/asset/html.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        HTML Tutorial
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 4 -->
+            <a href="course_playlist/development/bala_css.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/development/asset/css.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        CSS Tutorial
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 5 -->
+            <a href="course_playlist/development/bala_javascript.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/development/asset/js.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        JavaScript Tutorial
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 6 -->
+            <a href="course_playlist/development/bala_asy_js.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/development/asset/asjs.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Asynchronous JavaScript Tutorial
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 7 -->
+            <a href="course_playlist/development/react.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/development/asset/react.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        React Js Course
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 8 -->
+            <a href="course_playlist/development/redux.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/development/asset/redox.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Redux Toolkit Tutorial
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 9 -->
+            <a href="course_playlist/development/express.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/development/asset/express.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Express Js Tutorial
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 10 -->
+            <a href="course_playlist/development/NodeJs.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/development/asset/node.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Node Js Tutorial
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 11 -->
+            <a href="course_playlist/development/mongodb.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/development/asset/mongodb.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        MongoDB Tutorial
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 12 -->
+            <a href="course_playlist/development/mongoose.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/development/asset/mongoose.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Mongoose Tutorial
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 13 -->
+            <a href="course_playlist/development/mern.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/development/asset/mern.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        MERN Full Stack
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+         </div>
+      </div>
+
+
+      <!-- Row 6 -->
+      <div class="mb-8">
+         <h3 class="text-3xl font-bold text-gray-800 mb-4">
+            Cyber Security
+         </h3>
+         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- E-Book 1 -->
+            <a href="course_playlist/cybersecurity/CySA.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/cybersecurity/asset/cysa.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        CompTIA CySA+ - Complete Course
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 2 -->
+            <a href="course_playlist/cybersecurity/pentest.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/cybersecurity/asset/pen.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        CompTIA PenTest+ Full Course
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 3 -->
+            <a href="course_playlist/cybersecurity/CiscoCyberSecurity.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/cybersecurity/asset/cisco.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Cisco Cyber Security
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+         </div>
+      </div>
+
+      <!-- Row 7 -->
+      <div class="mb-8">
+         <h3 class="text-3xl font-bold text-gray-800 mb-4">
+            Artificial Intelligence And Machine Learning
+         </h3>
+         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- E-Book 1 -->
+            <a href="course_playlist/aiml/ai.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/aiml/asset/sim_ai.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        AI Course
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 2 -->
+            <a href="course_playlist/aiml/ai2.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/aiml/asset/2.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Generative AI Full Course
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 3 -->
+            <a href="course_playlist/aiml/aiandml.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/aiml/asset/aiml.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        AI And ML Full Course
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+         </div>
+      </div>
+
+      <!-- Row 8 -->
+      <div class="mb-8">
+         <h3 class="text-3xl font-bold text-gray-800 mb-4">
+            Cloud Computing
+         </h3>
+         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- E-Book 1 -->
+            <a href="course_playlist/cloud computing/cloud.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/cloud computing/asset/aws.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        AWS Certified Cloud Practitioner Certification Course
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 2 -->
+            <a href="course_playlist/cloud computing/cloud1.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/cloud computing/asset/sim.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Cloud Computing Full Course
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+            <!-- E-Book 3 -->
+            <a href="course_playlist/cloud computing/cloud2.html" target="_blank" class="block group">
+               <div
+                  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 group-hover:scale-105 h-80">
+                  <img alt="E-book cover image showing a person coding on a laptop" class="w-full h-60 object-cover"
+                     src="course_playlist/cloud computing/asset/goo.jpg" />
+                  <div class="p-4">
+                     <h4 class="text-xl font-bold text-gray-800 mb-2">
+                        Google Cloud Associate Cloud Engineer Course
+                     </h4>
+                  </div>
+               </div>
+            </a>
+
+         </div>
+      </div>
+
+
+   </div>
+   </footer>
+   </div>
+</section>
+<!-- Footer -->
+
+
+
+<!-- Footer -->
+<footer>
+   <section class="border-t border-t-gray-200 py-8 bg-white">
+      <div class="container mx-auto px-4">
+         <div class="flex flex-col md:flex-row justify-between items-center">
+            <!-- Footer Text -->
+            <div class="mb-4 md:mb-0">
+               <h2 class="text-xl font-bold">
+                  <span class="text-red-600 text-2xl">PERI </span>
+                  <span class="text-black text-2xl">E-Learning</span>
+               </h2>
+               <h3>
+                  Empowering your knowledge journey with interactive courses and comprehensive resources
+               </h3>
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex space-x-4 mt-4 md:mt-0 justify-center md:justify-start">
+               <!-- GitHub Icon -->
+               <a href="https://github.com/UDHAYA4777" target="_blank" rel="noopener noreferrer" class="social-link">
+                  <i class="fab fa-github text-3xl"></i>
+               </a>
+
+               <!-- LinkedIn Icon -->
+               <a href="https://www.linkedin.com/in/indrajith-m-5540a3200/" target="_blank" rel="noopener noreferrer"
+                  class="social-link">
+                  <i class="fab fa-linkedin text-3xl"></i> <!-- Corrected LinkedIn icon -->
+               </a>
+
+               <!-- Discord Icon -->
+               <a href="https://discord.com/channels/1331532270720389160/1331532271445872711" target="_blank"
+                  rel="noopener noreferrer" class="social-link">
+                  <i class="fab fa-discord text-3xl"></i>
+               </a>
+
+               <!-- Email Icon -->
+               <a href="mailto:mindrajith29@gmail.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                  <i class="fa-solid fa-envelope text-3xl"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- TailwindCSS Styling -->
+   <style>
+      .social-link {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 40px;
+         height: 40px;
+         background-color: #e1e1e1;
+         color: black;
+         border-radius: 50%;
+         transition: background-color 0.3s, transform 0.3s;
+         margin: 0 10px;
+      }
+
+      .social-link:hover {
+         background-color: #5865f2;
+         transform: scale(1.1);
+      }
+   </style>
+</footer>
